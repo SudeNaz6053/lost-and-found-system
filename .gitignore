@@ -1,0 +1,28 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Veritabanı (IGNORE EDİLDİ) ---
+# lost_found.db dahil tüm db dosyalarını yüklemez
+*.db
+*.sqlite3
+*.db-journal
+*.db-shm
+*.db-wal
+
+# --- Spyder & IDE Dosyaları ---
+.spyderproject
+.spyderworkspace
+.vscode/
+.idea/
+
+# --- Paketleme (EXE klasörleri) ---
+dist/
+build/
+*.spec
+
+# --- Sistem Dosyaları ---
+.DS_Store
+Thumbs.db
+Desktop.ini
