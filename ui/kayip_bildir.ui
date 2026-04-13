@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>949</width>
+    <height>675</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string> Kayıp Eşya Bildirimi</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_esya_adi">
+       <property name="text">
+        <string>Eşya Adı:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEdit_esya_adi"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_aciklama">
+       <property name="text">
+        <string>Açıklama:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QTextEdit" name="textEdit_aciklama"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_tarih">
+       <property name="text">
+        <string>Kaybolma Tarihi:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QDateEdit" name="dateEdit_tarih">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="date">
+        <date>
+         <year>2025</year>
+         <month>6</month>
+         <day>12</day>
+        </date>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_yer">
+       <property name="text">
+        <string>Kaybolduğu Yer:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="lineEdit_yer"/>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_resim">
+       <property name="text">
+        <string>Resim Seç (isteğe bağlı)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>Resim Ekle</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QPushButton" name="button_bildir">
+       <property name="text">
+        <string>Bildir</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLabel" name="label_resim_path">
+       <property name="text">
+        <string>Henüz dosya seçilmedi.Lütfen geçerli bir dosya seçerek yükleme işlemini tamamlayınız.</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
